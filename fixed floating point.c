@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-void fixedPoint(void) {
+/*void fixedPoint(void) {
 	float testOne = 23873.9324;
 	float testTwo = 345.523143;
 	float testThree = 2837.2343243;
@@ -32,9 +32,35 @@ void fixedPoint(void) {
 	printf("e = %f\n", e);
 	printf("f = %f\n", f);	
 	
+}*/
+
+void NowItWillBeGood(void) {
+	int64_t cc, cents, L1, L2, L3, L4, L5, g, h, i, j, k;
+	
+	cents = 1000;
+	cc = cents;
+
+	L1 = 2387449832 * cc;
+	L2 = 3209488 * cc;
+	L3 = 9874358347 * cc;
+	L4 = 2389 * cc;
+	L5 = 48229337283329 * cc;
+
+	g = L3 * L1;
+	h = L5 + L2;
+	i = L4 - L5;
+	j = L3 + L5 + L5 + L5 + L5 + L5;
+	k = L2 - L1;
+
+	printf("g = %lld\n", g);
+	printf("h = %lld\n", h);
+	printf("i = %lld\n", i);
+	printf("j = %lld\n", j);
+	printf("k = %lld\n", k);	
 }
 
 int main(void) {
-	fixedPoint();
+	// fixedPoint();
+	NowItWillBeGood();
 return 0;
 }
